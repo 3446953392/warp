@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.wlsdbackend.mapper.QuestionAnswerMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.QuestionAnswer">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <id property="questionId" column="question_id" jdbcType="INTEGER"/>
+            <result property="selectedoption" column="selectedOption" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,question_id,selectedOption
+    </sql>
+</mapper>

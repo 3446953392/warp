@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.wlsdbackend.mapper.ActivityMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.Activity">
+            <id property="itemId" column="item_id" jdbcType="INTEGER"/>
+            <result property="itemTitle" column="item_title" jdbcType="VARCHAR"/>
+            <result property="itemContent" column="item_content" jdbcType="VARCHAR"/>
+            <result property="itemCover" column="item_cover" jdbcType="VARCHAR"/>
+            <result property="beginTime" column="begin_time" jdbcType="TIMESTAMP"/>
+            <result property="finishTime" column="finish_time" jdbcType="TIMESTAMP"/>
+            <result property="itemViews" column="item_views" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        item_id,item_title,item_content,
+        item_cover,begin_time,finish_time,
+        item_views
+    </sql>
+</mapper>

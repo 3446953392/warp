@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.wlsdbackend.mapper.IntegralGiftsMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.IntegralGifts">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="giftName" column="gift_name" jdbcType="VARCHAR"/>
+            <result property="price" column="price" jdbcType="INTEGER"/>
+            <result property="img" column="img" jdbcType="VARCHAR"/>
+            <result property="restAmount" column="rest_amount" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,gift_name,price,
+        img,rest_amount
+    </sql>
+</mapper>

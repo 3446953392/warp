@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.wlsdbackend.mapper.MeetingSubscriptionMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.MeetingSubscription">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <id property="itemId" column="item_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,item_id
+    </sql>
+</mapper>

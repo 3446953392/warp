@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.wlsdbackend.mapper.WonderfulPicturesMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.WonderfulPictures">
+            <id property="pictureId" column="picture_id" jdbcType="INTEGER"/>
+            <result property="pictureTitle" column="picture_title" jdbcType="VARCHAR"/>
+            <result property="pictureUrl" column="picture_url" jdbcType="VARCHAR"/>
+            <result property="pictureTag" column="picture_tag" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        picture_id,picture_title,picture_url,
+        picture_tag
+    </sql>
+</mapper>

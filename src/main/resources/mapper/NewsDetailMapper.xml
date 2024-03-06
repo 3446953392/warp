@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.wlsdbackend.mapper.NewsDetailMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.NewsDetail">
+            <id property="newsDetailId" column="news_detail_id" jdbcType="INTEGER"/>
+            <result property="newsId" column="news_id" jdbcType="INTEGER"/>
+            <result property="detail1" column="detail1" jdbcType="VARCHAR"/>
+            <result property="detail2" column="detail2" jdbcType="VARCHAR"/>
+            <result property="detail3" column="detail3" jdbcType="VARCHAR"/>
+            <result property="detail4" column="detail4" jdbcType="VARCHAR"/>
+            <result property="detail5" column="detail5" jdbcType="VARCHAR"/>
+            <result property="detail6" column="detail6" jdbcType="VARCHAR"/>
+            <result property="detail7" column="detail7" jdbcType="VARCHAR"/>
+            <result property="detail8" column="detail8" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        news_detail_id,news_id,detail1,
+        detail2,detail3,detail4,
+        detail5,detail6,detail7,
+        detail8
+    </sql>
+</mapper>

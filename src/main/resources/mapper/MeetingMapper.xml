@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.MeetingMapper">
+
+    <resultMap id="BaseResultMap" type="com.yupi.wlsdbackend.domain.Meeting">
+            <id property="itemId" column="item_id" jdbcType="INTEGER"/>
+            <result property="itemTitle" column="item_title" jdbcType="VARCHAR"/>
+            <result property="itemType" column="item_type" jdbcType="VARCHAR"/>
+            <result property="itemDate" column="item_date" jdbcType="VARCHAR"/>
+            <result property="itemTime" column="item_time" jdbcType="VARCHAR"/>
+            <result property="itemLocation" column="item_location" jdbcType="VARCHAR"/>
+            <result property="itemContent" column="item_content" jdbcType="VARCHAR"/>
+            <result property="itemViews" column="item_views" jdbcType="INTEGER"/>
+            <result property="itemAddress" column="item_address" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        item_id,item_title,item_type,
+        item_date,item_time,item_location,
+        item_content,item_views,item_address
+    </sql>
+</mapper>
